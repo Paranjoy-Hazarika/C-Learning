@@ -45,6 +45,7 @@ int main() {
 
     //* NOTE: NEVER MODIFY AND USE THE SAME VARIABLE IN THE SAME STATEMENT - C HAS NO ORDER OF EVALUATION IN PRINTF - SO IT WOULD EVALUATE IN ANY ORDER - GIVING DIFFERENCE IN READINGS
 
+    //* Single line `for` block
     int j;
     for (j = 0; j < 10; ++j)
     ;
