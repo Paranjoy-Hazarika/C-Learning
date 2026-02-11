@@ -13,7 +13,7 @@ int main() {
 
         if (c == '\n') {
             ++nc;
-            // i++; //? Either pre or post increment can be used.
+            // i++; //* Either pre or post increment can be used.
             ++i;
             printf("%d. ", i); //* The print of i is put inside the if condition so that it increments i only when a new line is made - and not everytime a character is written.
         }

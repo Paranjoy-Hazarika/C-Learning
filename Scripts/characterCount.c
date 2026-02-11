@@ -24,8 +24,10 @@ int main() {
     int n = 0;
     int c;  //* Change the `int` type to `long` type - to handle longer lines
     while (((c = getchar()) != EOF) && (c != '\n')) {
-        if (((c >= 'A') && (c <= 'Z')) || ((c >= 'a') && (c <= 'z'))) {
-            n++;
+        if (c >= 'A' && c <= 'z') {  //* Single line comparison to check whether the typed character is truly an alphabet. Doing using a nested loop is not the best way - so keep it single line. Helps prevent bad practice of making nested loops in the future.
+            if (c <= 'Z' || c >= 'a') {
+                n++;
+            }
         }
     }
 
