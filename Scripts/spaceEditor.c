@@ -21,7 +21,7 @@ void spaceFormatByBool() {
 
 void spaceFormatByCounter() {
     int c;  //* An int variable to store the character typed
-    int space = 0;
+    int space = 0;      //* An integer space counter - that counts the number of spaces printed - to control the number of spaces allowed
 
     while ((c = getchar()) != EOF) {
         if (c == ' ') {     //* While condition to check if the character pressed is space - if yes - then execute its code block
